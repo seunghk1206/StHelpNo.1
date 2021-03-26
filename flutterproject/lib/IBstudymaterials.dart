@@ -30,11 +30,11 @@ class IBMaterialsContainer extends StatelessWidget {
             Text("The International Baccalaureate Diploma Program (IBDP)"),
             ElevatedButton(
               child: Text("IB Major Study Materials"),
-              onPressed: _launchURLIBguides(),
+              onPressed: _launchURLIBguides,
             ),
             ElevatedButton(
               child: Text("The official IBO website"),
-              onPressed: _launchURLIBofficial(),
+              onPressed: _launchURLIBofficial,
             ),
           ],
         )
