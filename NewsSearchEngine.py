@@ -16,4 +16,8 @@ for Ind, each in enumerate(search_ls):
                         tempL.append(tempurl.split('/')[4])
         except:
             pass
+file = open("./Data.txt", "w") #[username_info].txt - > youngho.txt, file의 권한 = w -> Write
+file.write(str(set(tempL))) #new line
+file.write("\n")
+file.close()
 print(set(tempL))
