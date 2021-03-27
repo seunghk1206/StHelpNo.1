@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          SizedBox(height: 25.0),
+          
           Padding(
             padding: EdgeInsets.only(left: 30.0),
             child: Row(
@@ -81,7 +81,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: EdgeInsets.only(top: 45.0),
                 ),
                 Container(
-<<<<<<< HEAD
                   height: 200,
                       width: 150.0,
                       decoration: BoxDecoration(
@@ -97,89 +96,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                       ),
                     ),
-                    Padding(
-=======
-                  height: 50.0,
-                  width: 150.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Colors.grey,
-                        style: BorderStyle.solid,
-                        width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: ElevatedButton(
-                    child:
-                        Text("Study Materials – A Comprehensive Compilation"),
-                    onPressed: () {
-                      navigateToStudyMaterials(context);
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 30.0),
-                ),
-                Container(
-                  height: 50.0,
-                  width: 150.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Colors.grey,
-                        style: BorderStyle.solid,
-                        width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: ElevatedButton(
-                    child: Text("Upcoming Events for Students"),
-                    onPressed: () {
-                      navigateToUpcomingEvents(context);
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 30.0),
-                ),
-                Container(
-                  height: 50.0,
-                  width: 150.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Colors.grey,
-                        style: BorderStyle.solid,
-                        width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: ElevatedButton(
-                    child: Text("Internship Opportunities"),
-                    onPressed: () {
-                      navigateToStudyMaterials(context);
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 30.0),
-                ),
-                Container(
-                  height: 50.0,
-                  width: 150.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Colors.grey,
-                        style: BorderStyle.solid,
-                        width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: ElevatedButton(
-                    child: Text("Tips from Former Students"),
-                    onPressed: () {
-                      navigateToStudyMaterials(context);
-                    },
-                  ),
-                ),
-                Padding(
->>>>>>> a966d9fbb26b518479215e6d47c9d15be2228955
-                  padding: EdgeInsets.only(top: 30.0),
-                ),
               ],
             ),
           )
