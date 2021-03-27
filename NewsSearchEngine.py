@@ -16,11 +16,18 @@ for Ind, each in enumerate(search_ls):
                     if 'https://munfinder.com/mun/' in tempurl:
                         tempL.append(tempurl.split('/')[4])
             elif Ind == 1:
-                tempL.append(url.get_text())
+                if len(url.get_text()) > 13:
+                    pass
+                else:
+                    tempL.append(url.get_text())
         except:
             pass
+for each in tempL:
+    if each == '':
+        tempL.remove(each)
+    else:
+        pass
 file = open("./Data.txt", "w") #[username_info].txt - > youngho.txt, file의 권한 = w -> Write
 file.write(str(set(tempL))) #new line
 file.write("\n")
 file.close()
-print(set(tempL))
