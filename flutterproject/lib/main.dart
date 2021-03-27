@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/app_screens/screens.dart'; //dude we have all screens imoprted here
+import 'dart:async';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +14,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Color(0xFF21BFBD),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: BottomNavScreen(),
+      home: SplashScreen(), //splash screen when opening
     );
   }
 }
+
+
