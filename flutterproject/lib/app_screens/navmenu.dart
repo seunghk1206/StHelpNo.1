@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/app_screens/screens.dart';
 import 'dart:async';
 
-
+import 'package:flutterproject/app_screens/upcomingEvents.dart';
 
 class BottomNavScreen extends StatefulWidget {
   @override
@@ -10,11 +10,10 @@ class BottomNavScreen extends StatefulWidget {
 }
 
 class _BottomNavScreenState extends State<BottomNavScreen> {
-    
   final List _screens = [
     HomeScreen(),
     StudyMaterials(),
-    Scaffold(), //CHANGE THIS TO UPCOMING EVENTS
+    UpcomingEvents(), //CHANGE THIS TO UPCOMING EVENTS
     Scaffold(), // CHANGE THIS to INTERNSHIP OPPORTUNITIES
     Scaffold() // CHANGE THIS to TIPS FOr STUDENTS
   ];
@@ -34,7 +33,13 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         elevation: 0.0,
-        items: [Icons.home, Icons.menu_book_outlined, Icons.event_available, Icons.work, Icons.face_retouching_natural]
+        items: [
+          Icons.home,
+          Icons.menu_book_outlined,
+          Icons.event_available,
+          Icons.work,
+          Icons.face_retouching_natural
+        ]
             .asMap()
             .map((key, value) => MapEntry(
                   key,
@@ -61,4 +66,3 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     );
   }
 }
-
