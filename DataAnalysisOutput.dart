@@ -7,6 +7,7 @@ void main() {
 
 Analysis(var filename) {
   return File(filename).readAsString().then((String contents) {
-    print(contents);
+    var splitL = contents.split(", ");
+    print(splitL);
   });
 }
