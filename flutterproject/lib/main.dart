@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'StudyMaterials.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,6 +20,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Future navigateToStudyMaterials(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => StudyMaterials()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,9 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.only(left: 25.0, right: 20.0),
               children: <Widget>[
                 Padding(
-                    padding: EdgeInsets.only(top: 45.0),
+                  padding: EdgeInsets.only(top: 45.0),
                 ),
-                    Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Container(
@@ -136,7 +142,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fontFamily: 'Montserrat',
                                   color: Colors.white,
                                   fontSize: 15.0))),
-                    )
+                    ),
+                    Container(
+                        child: ElevatedButton(
+                      child: Text("Study Materials Page"),
+                      onPressed: () {
+                        navigateToStudyMaterials(context);
+                      },
+                    ))
                   ],
                 )
               ],
@@ -145,4 +158,5 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
-  }}
+  }
+}
