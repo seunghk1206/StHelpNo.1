@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class IBMaterialsContainer extends StatelessWidget {
+  IBMaterialsContainer();
   _launchURLIBguides() async {
     const url = 'https://ibguides.com/';
     if (await canLaunch(url)) {
