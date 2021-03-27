@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f4a339a7-a956-4b83-b0b4-c8f3887cfd00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/flutterproject/lib/CBSEmaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/CBSEmaterials.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutterproject/lib/CambridgeStudyMaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/CambridgeStudyMaterials.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutterproject/lib/IBstudymaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/IBstudymaterials.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutterproject/lib/ICSEmaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/ICSEmaterials.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutterproject/lib/JEEmaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/JEEmaterials.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutterproject/lib/StudyMaterials.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutterproject/lib/StudyMaterials.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
