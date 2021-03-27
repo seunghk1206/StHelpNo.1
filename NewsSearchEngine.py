@@ -3,8 +3,8 @@ import urllib.request
 import itertools
 
 search_ls = ["https://munfinder.com", "https://internshala.com/internships"]
-nameSearch = ['munfinder']
-tempL = [[], []]
+nameSearch = ['munfinder', 'internshala']
+tempL = [[] for _ in search_ls]
 for Ind, each in enumerate(search_ls):
     source = urllib.request.urlopen(each).read()
     soup = bs.BeautifulSoup(source,'lxml')
@@ -24,6 +24,9 @@ for Ind, each in enumerate(search_ls):
             pass
 file = open("./Data.txt", "w") #[username_info].txt - > youngho.txt, file의 권한 = w -> Write
 for each in tempL:
-    file.write(str(set(each))) #new line
+    AL = set(each)
+    for event in AL:
+        file.write(str(event))
+        file.write(", ") #new line
     file.write("\n")
 file.close()
