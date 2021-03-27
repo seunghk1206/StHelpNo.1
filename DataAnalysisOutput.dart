@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main(){
-  print(Analysis());
-  
+  var splitL = Analysis();
+  print(splitL);
 }
 Analysis(){
-  File('Data.txt').readAsString().then((String contents) { var splitL = contents.split("\n");});
+  return File('Data.txt').readAsString().then((String contents) { print(contents);});
 }
