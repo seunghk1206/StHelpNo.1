@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/app_config/palette.dart';
 import 'package:flutterproject/app_config/styles.dart';
 import 'package:flutterproject/app_screens/screens.dart';
-import 'package:flutterproject/app_widgets/dropdown.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -22,29 +21,21 @@ class HomeScreen extends StatefulWidget {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 15.0, left: 10.0),
+            padding: EdgeInsets.only(top: 15.0, left: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.arrow_back_ios),
-                  color: Colors.white,
-                  onPressed: () {},
-                ),
                 Container(
                     width: 125.0,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         IconButton(
-                          icon: Icon(Icons.filter_list),
+                          icon: Icon(Icons.info),
                           color: Colors.white,
-                          onPressed: () {},
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.menu),
-                          color: Colors.white,
-                          onPressed: () {},
+                          onPressed: () {
+
+                          },
                         )
                       ],
                     ))
@@ -53,17 +44,17 @@ class HomeScreen extends StatefulWidget {
           ),
           SizedBox(height: 25.0),
           Padding(
-            padding: EdgeInsets.only(left: 40.0),
+            padding: EdgeInsets.only(left: 30.0),
             child: Row(
               children: <Widget>[
-                Text('Student',
+                Text('The Ultimate',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 25.0)),
                 SizedBox(width: 10.0),
-                Text('Helper',
+                Text('Student Helper',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
