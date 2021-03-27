@@ -4,6 +4,8 @@ import 'IBstudymaterials.dart';
 import 'CambridgeStudyMaterials.dart';
 import 'CBSEmaterials.dart';
 import 'ICSEmaterials.dart';
+import 'JEEmaterials.dart';
+import 'SATmaterials.dart';
 
 class StudyMaterials extends StatelessWidget {
   Future navigateToib(context) async {
@@ -24,6 +26,16 @@ class StudyMaterials extends StatelessWidget {
   Future navigateToICSE(context) async {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => ICSEmaterials()));
+  }
+
+  Future navigateToSAT(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => SATmaterials()));
+  }
+
+  Future navigateToJEE(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => JEEmaterials()));
   }
 
   @override
@@ -58,7 +70,19 @@ class StudyMaterials extends StatelessWidget {
               onPressed: () {
                 navigateToICSE(context);
               },
-            )
+            ),
+            ElevatedButton(
+              child: Text("IIT-JEE resources"),
+              onPressed: () {
+                navigateToJEE(context);
+              },
+            ),
+            ElevatedButton(
+              child: Text("SAT resources"),
+              onPressed: () {
+                navigateToSAT(context);
+              },
+            ),
           ],
         ));
   }

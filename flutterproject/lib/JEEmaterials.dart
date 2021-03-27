@@ -21,6 +21,43 @@ class JEEmaterials extends StatelessWidget {
     }
   }
 
+  _launchURLjeePastAdv() async {
+    const url = 'https://jeeadv.ac.in/pastqp.php';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLjeePastMain() async {
+    const url = 'https://byjus.com/jee/jee-main-question-paper/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLjeeSMMain() async {
+    const url = 'https://www.embibe.com/exams/jee-main-study-material/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLjeeSMadv() async {
+    const url =
+        'https://www.careerindia.com/entrance-exam/jee-advanced-study-material-and-reference-books-e11.html';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +75,23 @@ class JEEmaterials extends StatelessWidget {
           ElevatedButton(
             child: Text("The official IIT-Jee Advanced website"),
             onPressed: _launchURLjeeAdv,
-          )
+          ),
+          ElevatedButton(
+            child: Text("IIT-JEE Mains Study Material"),
+            onPressed: _launchURLjeeSMMain,
+          ),
+          ElevatedButton(
+            child: Text("IIT-JEE Advanced Study Material"),
+            onPressed: _launchURLjeeSMadv,
+          ),
+          ElevatedButton(
+            child: Text("IIT-JEE Mains Past Papers with Solutions"),
+            onPressed: _launchURLjeePastMain,
+          ),
+          ElevatedButton(
+            child: Text("IIT-JEE Advanced Past Papers"),
+            onPressed: _launchURLjeePastAdv,
+          ),
         ],
       ),
     );
