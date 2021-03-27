@@ -42,11 +42,24 @@ class IBMaterialsContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Column(
+    return Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "IBDP Study Materials",
+            textAlign: TextAlign.center,
+          ),
+        ),
+        body: Center(
+            child: Column(
           children: [
-            Text("The International Baccalaureate Diploma Program (IBDP)"),
+            Text(
+              "The International Baccalaureate Diploma Program (IBDP)",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
             ElevatedButton(
               child: Text("IB Major Study Materials"),
               onPressed: _launchURLIBguides,
@@ -64,8 +77,6 @@ class IBMaterialsContainer extends StatelessWidget {
               onPressed: _launchURLIBpast2,
             )
           ],
-        )
-      ],
-    );
+        )));
   }
 }

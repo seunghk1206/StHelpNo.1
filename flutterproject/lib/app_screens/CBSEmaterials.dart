@@ -34,23 +34,36 @@ class cbseMaterials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Text(
-            "CBSE stands for Central Board of Secondary Education.  CBSE is one of the most popular boards in India"),
-        ElevatedButton(
-          child: Text("The CBSE official website"),
-          onPressed: _launchURLcbseWebsite,
+        appBar: AppBar(
+          title: Text(
+            "CBSE Study Material",
+            textAlign: TextAlign.center,
+          ),
         ),
-        ElevatedButton(
-          child: Text("Byju's Free CBSE Resources"),
-          onPressed: _launchURLcbseByjus,
-        ),
-        ElevatedButton(
-          child: Text("Free PDF Study Material Downloads - NCERT Guru"),
-          onPressed: _launchURLcbseNCERTguru,
-        )
-      ],
-    ));
+        body: Center(
+            child: Column(
+          children: [
+            Text(
+              "CBSE stands for Central Board of Secondary Education.  CBSE is one of the most popular boards in India",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
+            ElevatedButton(
+              child: Text("The CBSE official website"),
+              onPressed: _launchURLcbseWebsite,
+            ),
+            ElevatedButton(
+              child: Text("Byju's Free CBSE Resources"),
+              onPressed: _launchURLcbseByjus,
+            ),
+            ElevatedButton(
+              child: Text("Free PDF Study Material Downloads - NCERT Guru"),
+              onPressed: _launchURLcbseNCERTguru,
+            )
+          ],
+        )));
   }
 }

@@ -34,23 +34,36 @@ class SATmaterials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Text(
-            "The SAT examination is a common entrance test, administed by the College Board.  It is mainly used in the college admissions to the United States"),
-        ElevatedButton(
-          child: Text("The official SAT website"),
-          onPressed: _launchURLsatOff,
+        appBar: AppBar(
+          title: Text(
+            "SAT Exam Study Materials",
+            textAlign: TextAlign.center,
+          ),
         ),
-        ElevatedButton(
-          child: Text("Official SAT Practice Tests"),
-          onPressed: _launchURLsatPT,
-        ),
-        ElevatedButton(
-          child: Text("Khan Academy Practice Resources"),
-          onPressed: _launchURLsatKA,
-        )
-      ],
-    ));
+        body: Center(
+            child: Column(
+          children: [
+            Text(
+              "The SAT examination is a common entrance test, administed by the College Board.  It is mainly used in the college admissions to the United States",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
+            ElevatedButton(
+              child: Text("The official SAT website"),
+              onPressed: _launchURLsatOff,
+            ),
+            ElevatedButton(
+              child: Text("Official SAT Practice Tests"),
+              onPressed: _launchURLsatPT,
+            ),
+            ElevatedButton(
+              child: Text("Khan Academy Practice Resources"),
+              onPressed: _launchURLsatKA,
+            )
+          ],
+        )));
   }
 }

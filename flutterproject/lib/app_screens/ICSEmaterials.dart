@@ -43,27 +43,41 @@ class ICSEmaterials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Text(
-            "ICSE, standing for Indian Certificate of Secondary Education, is a popular board of education in India"),
-        ElevatedButton(
-          child: Text("The official website of CISCE, the parent body of ICSE"),
-          onPressed: _launchURLcisce,
+        appBar: AppBar(
+          title: Text(
+            "ICSE Study Materials",
+            textAlign: TextAlign.center,
+          ),
         ),
-        ElevatedButton(
-          child: Text("Byju's Free ICSE study materials"),
-          onPressed: _launchURLbyjusICSE,
-        ),
-        ElevatedButton(
-          child: Text("Applu's Topper Website - Solved Past Papers"),
-          onPressed: _launchURLicsePast1,
-        ),
-        ElevatedButton(
-          child: Text("Byju's Free Solved Past Papers"),
-          onPressed: _launchURLicsePast2,
-        )
-      ],
-    ));
+        body: Center(
+            child: Column(
+          children: [
+            Text(
+              "ICSE, standing for Indian Certificate of Secondary Education, is a popular board of education in India",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
+            ElevatedButton(
+              child: Text(
+                  "The official website of CISCE, the parent body of ICSE"),
+              onPressed: _launchURLcisce,
+            ),
+            ElevatedButton(
+              child: Text("Byju's Free ICSE study materials"),
+              onPressed: _launchURLbyjusICSE,
+            ),
+            ElevatedButton(
+              child: Text("Applu's Topper Website - Solved Past Papers"),
+              onPressed: _launchURLicsePast1,
+            ),
+            ElevatedButton(
+              child: Text("Byju's Free Solved Past Papers"),
+              onPressed: _launchURLicsePast2,
+            )
+          ],
+        )));
   }
 }

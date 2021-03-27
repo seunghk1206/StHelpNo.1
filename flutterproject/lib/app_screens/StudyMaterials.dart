@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterproject/app_config/styles.dart';
 import 'IBstudymaterials.dart';
 import 'CambridgeStudyMaterials.dart';
 import 'CBSEmaterials.dart';
@@ -42,12 +43,23 @@ class StudyMaterials extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Study Material"),
+          title: Text(
+            "Study Material",
+            textAlign: TextAlign.center,
+          ),
           backgroundColor: Colors.lightBlueAccent[400],
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Study Materials for various curricula"),
+            Text(
+              "Study Materials for various curricula",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
             ElevatedButton(
                 child: Text("IBDP resources"),
                 onPressed: () {

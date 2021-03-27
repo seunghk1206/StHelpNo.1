@@ -61,39 +61,49 @@ class JEEmaterials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text(
-              "IIT-JEE is the most commonly written engineering entrance exam for undergraduate programs",
-              style: TextStyle(
-                color: Colors.black,
-              )),
-          ElevatedButton(
-            child: Text("The official IIT-JEE Mains website"),
-            onPressed: _launchURLjeeMain,
+        appBar: AppBar(
+          title: Text(
+            "IIT-JEE Study Materials",
+            textAlign: TextAlign.center,
           ),
-          ElevatedButton(
-            child: Text("The official IIT-Jee Advanced website"),
-            onPressed: _launchURLjeeAdv,
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              Text(
+                "IIT-JEE is the most commonly written engineering entrance exam for undergraduate programs",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30,
+                  fontFamily: "Times New Roman",
+                ),
+              ),
+              ElevatedButton(
+                child: Text("The official IIT-JEE Mains website"),
+                onPressed: _launchURLjeeMain,
+              ),
+              ElevatedButton(
+                child: Text("The official IIT-Jee Advanced website"),
+                onPressed: _launchURLjeeAdv,
+              ),
+              ElevatedButton(
+                child: Text("IIT-JEE Mains Study Material"),
+                onPressed: _launchURLjeeSMMain,
+              ),
+              ElevatedButton(
+                child: Text("IIT-JEE Advanced Study Material"),
+                onPressed: _launchURLjeeSMadv,
+              ),
+              ElevatedButton(
+                child: Text("IIT-JEE Mains Past Papers with Solutions"),
+                onPressed: _launchURLjeePastMain,
+              ),
+              ElevatedButton(
+                child: Text("IIT-JEE Advanced Past Papers"),
+                onPressed: _launchURLjeePastAdv,
+              ),
+            ],
           ),
-          ElevatedButton(
-            child: Text("IIT-JEE Mains Study Material"),
-            onPressed: _launchURLjeeSMMain,
-          ),
-          ElevatedButton(
-            child: Text("IIT-JEE Advanced Study Material"),
-            onPressed: _launchURLjeeSMadv,
-          ),
-          ElevatedButton(
-            child: Text("IIT-JEE Mains Past Papers with Solutions"),
-            onPressed: _launchURLjeePastMain,
-          ),
-          ElevatedButton(
-            child: Text("IIT-JEE Advanced Past Papers"),
-            onPressed: _launchURLjeePastAdv,
-          ),
-        ],
-      ),
-    );
+        ));
   }
 }

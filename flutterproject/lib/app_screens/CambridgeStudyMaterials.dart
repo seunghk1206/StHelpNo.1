@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutterproject/app_config/styles.dart';
+//import 'package:flutterproject/app_config/styles.dart';
 
 class CambridgeContainer extends StatelessWidget {
   _launchURLCambridgeofficial() async {
@@ -42,23 +42,38 @@ class CambridgeContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text("The Cambridge International Curriculum"),
-        ElevatedButton(
-          child: Text("The official Cambridge International Website"),
-          onPressed: _launchURLCambridgeofficial,
-          style: const Styles.buttonTextStyle,
+    return Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Cambridge International Education Study Materials",
+            textAlign: TextAlign.center,
+          ),
         ),
-        ElevatedButton(
-          child: Text("A level chemistry revision material"),
-          onPressed: _launchURLcieChem,
-        ),
-        ElevatedButton(
-          child: Text("A level physics study materials"),
-          onPressed: _launchURLciePMT,
-        )
-      ],
-    );
+        body: Center(
+            child: Column(
+          children: [
+            Text(
+              "The Cambridge International Curriculum",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Times New Roman",
+              ),
+            ),
+            ElevatedButton(
+              child: Text("The official Cambridge International Website"),
+              onPressed: _launchURLCambridgeofficial,
+              //style: const Styles.buttonTextStyle,
+            ),
+            ElevatedButton(
+              child: Text("A level chemistry revision material"),
+              onPressed: _launchURLcieChem,
+            ),
+            ElevatedButton(
+              child: Text("A level physics study materials"),
+              onPressed: _launchURLciePMT,
+            )
+          ],
+        )));
   }
 }
