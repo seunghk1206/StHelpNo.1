@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutterproject/app_config/styles.dart';
 
 class CambridgeContainer extends StatelessWidget {
   _launchURLCambridgeofficial() async {
@@ -47,6 +48,7 @@ class CambridgeContainer extends StatelessWidget {
         ElevatedButton(
           child: Text("The official Cambridge International Website"),
           onPressed: _launchURLCambridgeofficial,
+          style: const Styles.buttonTextStyle,
         ),
         ElevatedButton(
           child: Text("A level chemistry revision material"),
