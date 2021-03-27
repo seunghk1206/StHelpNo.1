@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/app_config/palette.dart';
 import 'package:flutterproject/app_config/styles.dart';
 import 'package:flutterproject/app_screens/screens.dart';
+import 'package:flutterproject/app_screens/upcomingEvents.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -12,6 +13,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Future navigateToStudyMaterials(context) async {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => StudyMaterials()));
+  }
+
+  Future navigateToUpcomingEvents(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => UpcomingEvents()));
   }
 
   @override
@@ -126,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ElevatedButton(
                     child: Text("Upcoming Events for Students"),
                     onPressed: () {
-                      navigateToStudyMaterials(context);
+                      navigateToUpcomingEvents(context);
                     },
                   ),
                 ),
