@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'IBstudymaterials.dart';
 import 'CambridgeStudyMaterials.dart';
+import 'CBSEmaterials.dart';
+import 'ICSEmaterials.dart';
 
 class StudyMaterials extends StatelessWidget {
   Future navigateToib(context) async {
@@ -12,6 +14,16 @@ class StudyMaterials extends StatelessWidget {
   Future navigateTocie(context) async {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => CambridgeContainer()));
+  }
+
+  Future navigateToCBSE(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => cbseMaterials()));
+  }
+
+  Future navigateToICSE(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ICSEmaterials()));
   }
 
   @override
@@ -33,6 +45,18 @@ class StudyMaterials extends StatelessWidget {
               child: Text("Cambridge International Resources"),
               onPressed: () {
                 navigateTocie(context);
+              },
+            ),
+            ElevatedButton(
+              child: Text("CBSE resources"),
+              onPressed: () {
+                navigateToCBSE(context);
+              },
+            ),
+            ElevatedButton(
+              child: Text("ICSE resources"),
+              onPressed: () {
+                navigateToICSE(context);
               },
             )
           ],

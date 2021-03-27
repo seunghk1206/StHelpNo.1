@@ -143,14 +143,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                   color: Colors.white,
                                   fontSize: 15.0))),
                     ),
-                    Container(
-                      child: ElevatedButton(
-                        child: Text("Study Materials Page"),
-                        onPressed: () {
-                          navigateToStudyMaterials(context);
-                        },
-                      ),
-                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Text(
+                        "We have compiled a large number of resources into the sections below"),
+                    ElevatedButton(
+                      child: Text("Study Materials Page"),
+                      onPressed: () {
+                        navigateToStudyMaterials(context);
+                      },
+                    ),
                   ],
                 )
               ],

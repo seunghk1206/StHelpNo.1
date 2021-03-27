@@ -13,6 +13,24 @@ class cbseMaterials extends StatelessWidget {
     }
   }
 
+  _launchURLcbseByjus() async {
+    const url = 'https://byjus.com/cbse-study-material/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLcbseNCERTguru() async {
+    const url = 'https://www.ncertbooks.guru/study-material/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +42,14 @@ class cbseMaterials extends StatelessWidget {
           child: Text("The CBSE official website"),
           onPressed: _launchURLcbseWebsite,
         ),
-        ElevatedButton(),
+        ElevatedButton(
+          child: Text("Byju's Free CBSE Resources"),
+          onPressed: _launchURLcbseByjus,
+        ),
+        ElevatedButton(
+          child: Text("Free PDF Study Material Downloads - NCERT Guru"),
+          onPressed: _launchURLcbseNCERTguru,
+        )
       ],
     ));
   }
