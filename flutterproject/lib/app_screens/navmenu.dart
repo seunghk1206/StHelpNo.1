@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterproject/app_screens/Tipsforstudents.dart';
 import 'package:flutterproject/app_screens/UpcomingInternships.dart';
 import 'package:flutterproject/app_screens/screens.dart';
 import 'dart:async';
@@ -17,7 +16,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     StudyMaterials(),
     UpcomingEvents(), //CHANGE THIS TO UPCOMING EVENTS
     UpcomingInternships(), // CHANGE THIS to INTERNSHIP OPPORTUNITIES
-    Scaffold(), // CHANGE THIS to TIPS FOr STUDENTS
+    Scaffold() // CHANGE THIS to TIPS FOr STUDENTS
   ];
   int _currentIndex = 0;
 
