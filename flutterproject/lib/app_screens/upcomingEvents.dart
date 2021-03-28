@@ -1,28 +1,31 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
+// Fix below here
 class UpcomingEvents extends StatelessWidget {
+  final textList = File("Data.txt").readAsString();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Upcoming Conferences and Events",
-          textAlign: TextAlign.center,
+        appBar: AppBar(
+          title: Text(
+            "Upcoming MUN in India",
+            textAlign: TextAlign.center,
+          ),
         ),
-      ),
-      body: Center(
+        body: Center(
           child: Column(
-        children: [
-          Text(
-              "Below is a list of upcoming events, MUN conferences, and any other opportunities open to students.",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 30,
-              ))
-        ],
-      )),
-    );
+            children: [
+              Text(
+                "Below are displayed upcoming Model United Nations conferences in India",
+                textAlign: TextAlign.center,
+              )
+            ],
+          ),
+        ));
   }
 }
+
+// class ClassName extends addadsf extends statelesswidget
