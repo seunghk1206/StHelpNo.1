@@ -22,7 +22,7 @@ class UpcomingEvents extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                splitL[0],
+                splitL[0],// 0-4 is MUN 5-9 is internship
                 textAlign: TextAlign.center,
               )
             ],
@@ -30,3 +30,5 @@ class UpcomingEvents extends StatelessWidget {
         ));
   }
 }
+
+// class ClassName extends addadsf extends statelesswidget
