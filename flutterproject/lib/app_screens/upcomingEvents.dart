@@ -1,12 +1,20 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'dart:core';
+import 'package:url_launcher/url_launcher.dart';
 
 // Fix below here
 class UpcomingEvents extends StatelessWidget {
-  final Future<String> textList = File("Data.txt").readAsString();
+  _launchURLmun() async {
+    const url = 'https://munfinder.com';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  final textList = File("Data.txt").readAsString();
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
@@ -22,9 +30,24 @@ class UpcomingEvents extends StatelessWidget {
           child: Column(
             children: [
               Text(
+<<<<<<< HEAD
                 splitL[0],// 0-4 is MUN 5-9 is internship
+=======
+                "Upcoming Model United Nations conferences in India",
+>>>>>>> f75bbe0778d86e7953298dee18ee31213a482c98
                 textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
+              ElevatedButton(
+                child: Text(
+                  "Click to view more upcoming MUN conferences in India",
+                  textAlign: TextAlign.center,
+                ),
+                onPressed: _launchURLmun,
               )
+              //Text(),
             ],
           ),
         ));
