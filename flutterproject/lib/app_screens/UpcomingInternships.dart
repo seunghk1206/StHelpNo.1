@@ -13,6 +13,19 @@ class UpcomingInternships extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
+<<<<<<< Updated upstream
+=======
+
+  _launchURLmpower() async {
+    const url = 'https://forms.gle/QQPFWFzaHjeoFHFZA';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+>>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
@@ -40,7 +53,11 @@ class UpcomingInternships extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            ElevatedButton(onPressed: null, child: null),
+            ElevatedButton(
+              child: Text("MPower For Youth Social Media Application Form"),
+              onPressed: _launchURLmpower,
+            ),
+            Padding(padding: EdgeInsets.only(bottom: 30.0)),
             ElevatedButton(
               child: Text("Click here to find more internship opportunities"),
               onPressed: _launchURLintern,
