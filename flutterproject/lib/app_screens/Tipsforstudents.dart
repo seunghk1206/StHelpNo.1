@@ -7,7 +7,7 @@ class Tipsforstudents extends StatelessWidget {
 
   _launchURLicseTips() async {
     const url =
-        'https://www.shiksha.com/boards/icse-board-preparation/';
+        'https://www.askiitians.com/school-exams/cisce/icse/preparation-tips.html';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
