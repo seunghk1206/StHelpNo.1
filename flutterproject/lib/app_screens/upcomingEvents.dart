@@ -19,6 +19,18 @@ class UpcomingEvents extends StatelessWidget {
   Widget build(BuildContext context) {
     String initS = textList.toString();
     var splitL = initS.split(", ");
+    var events = {
+      1: "Colloquium MUN",
+      2: "Brainiac MUN",
+      3: "Delhi School of Economics MUN",
+      4: "8th World Congress on HMS",
+      5: "Stay Home Model United Nations",
+      6: "Longfellow Middle School MUN Conference",
+      7: "Western Canada High School MUN 2021",
+      8: "elbMUN Online Conference 2021",
+      9: "Stay At Home Model United Nations 2021",
+      10: "International Crisis Summit MUN 2021"
+    };
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -31,21 +43,85 @@ class UpcomingEvents extends StatelessWidget {
             children: [
               Padding(padding: EdgeInsets.only(top: 10.0)),
               Text(
-                splitL[0],
+                events[1],
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 15,
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
               Text(
-                splitL[1],
+                events[2],
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 15,
                 ),
               ),
-
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[3],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[4],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[5],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[6],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[7],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[8],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[9],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Text(
+                events[10],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 5.0)),
               ElevatedButton(
                 child: Text(
                   "Click to view more upcoming MUN conferences in India",
