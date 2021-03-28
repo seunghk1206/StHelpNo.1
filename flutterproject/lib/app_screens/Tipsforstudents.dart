@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutterproject/app_config/palette.dart';
 
 class Tipsforstudents extends StatelessWidget {
   _launchURLcieTips() async {
@@ -23,9 +24,38 @@ class Tipsforstudents extends StatelessWidget {
     }
   }
 
+  _launchURLcbseTips() async {
+    const url = 'https://www.indiaeducation.net/cbse/preparation-tips.aspx';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLicseTips() async {
+    const url =
+        'https://www.askiitians.com/school-exams/cisce/icse/preparation-tips.html';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLsatTips() async {
+    const url = 'https://blog.prepscholar.com/sat-tips-and-tricks-you-must-use';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Palette.primaryColor,
       appBar: AppBar(
         title: Text(
           "Tips for Students",
@@ -36,10 +66,10 @@ class Tipsforstudents extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "We have included links to tips for students from various education boards.  These tips are very useful to learn and to prepare for examinations",
+              "We have compiled links to tips for students from various education boards.  These tips are very useful to learn and to prepare for examinations",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
               ),
             ),
             ElevatedButton(
@@ -49,6 +79,18 @@ class Tipsforstudents extends StatelessWidget {
             ElevatedButton(
               child: Text("IBDP Study Tips"),
               onPressed: _launchURLIBTips,
+            ),
+            ElevatedButton(
+              child: Text("CBSE Study Tips"),
+              onPressed: _launchURLcbseTips,
+            ),
+            ElevatedButton(
+              child: Text("ICSE Study Tips"),
+              onPressed: _launchURLicseTips,
+            ),
+            ElevatedButton(
+              child: Text("SAT Study Tips"),
+              onPressed: _launchURLsatTips,
             )
           ],
         ),
