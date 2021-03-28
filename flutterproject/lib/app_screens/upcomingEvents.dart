@@ -45,11 +45,11 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat",
           ),),
 
-            Padding(padding: EdgeInsets.only(top: 30.0,)),
-                    Text("MUNs:",
+            Padding(padding: EdgeInsets.only(top: 50.0,)),
+                    Text("MUNs Available:",
                     textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
                   fontFamily: "Montserrat",
@@ -66,7 +66,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat",
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[2],
                 textAlign: TextAlign.center,
@@ -77,7 +77,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[3],
                 textAlign: TextAlign.center,
@@ -88,7 +88,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[4],
                 textAlign: TextAlign.center,
@@ -99,7 +99,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[5],
                 textAlign: TextAlign.center,
@@ -110,7 +110,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[6],
                 textAlign: TextAlign.center,
@@ -121,7 +121,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[7],
                 textAlign: TextAlign.center,
@@ -132,7 +132,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[8],
                 textAlign: TextAlign.center,
@@ -143,7 +143,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[9],
                 textAlign: TextAlign.center,
@@ -154,7 +154,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 20.0)),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               Text(
                 events[10],
                 textAlign: TextAlign.center,
@@ -165,7 +165,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontFamily: "Montserrat"
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 50.0)),
+              Padding(padding: EdgeInsets.only(bottom: 40.0)),
               Container(
                     width: 125.0,
                     child: Row(
@@ -180,7 +180,7 @@ class UpcomingEvents extends StatelessWidget {
                         )
                       ],
                     )),
-              Padding(padding: EdgeInsets.only(bottom: 30.0)),
+              Padding(padding: EdgeInsets.only(bottom: 40.0)),
             ],
           ),
         );
