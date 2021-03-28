@@ -69,31 +69,30 @@ class Tipsforstudents extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green,
-      appBar: AppBar(
-        backgroundColor: Color(0xFF21BFBD),
-              actions: <Widget>[
-        IconButton(
-          icon: Icon(
-            Icons.face_retouching_natural,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            // do something
-          },
-        )
-      ],
-          title: Text(
-            "Practical Tips for Students", 
-            textAlign: TextAlign.center,
-          ),
-        ),
-      body: Center(
-        child: Column(
-          children: [
+      
+      body: ListView(
+          children: <Widget>[
+
             Padding(
-                    padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
+                    padding: EdgeInsets.only(top: 50.0, bottom: 30),
+
+              child:Text("Practical Tips for Students"  ,            
+              textAlign: TextAlign.center,
+              style: TextStyle(
+              fontFamily: "Montserrat",
+              color:Colors.white,
+              fontWeight: FontWeight.w600,
+                fontSize: 25,
+              ),
+            ),
+
+            ),
+
+
+            Padding(
+                    padding: EdgeInsets.only(top: 10.0, bottom: 0, left: 10, right: 10),
             child:Text(
-              "We have included links to tips for students from various education boards. These tips are very useful to learn and to prepare for your exams!",
+              "We have included links to tips for students from various education boards. These tips are very useful in preparation for you examinations.    Good Luck!",
               textAlign: TextAlign.center,
               
               style: TextStyle(
@@ -103,33 +102,125 @@ class Tipsforstudents extends StatelessWidget {
                 fontSize: 20,
               ),
             ),),
-            ElevatedButton(
+
+            SizedBox(height: 20.0),
+          Container(
+            padding: EdgeInsets.only(top: 30, bottom: 0),
+            height: MediaQuery.of(context).size.height * 0.60,
+            
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(topRight: Radius.circular(100.0)),
+            ),
+
+            
+          child: Column(
+        children: <Widget>[
+
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
               child: Text("ICSE Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
               onPressed: _launchURLicseTips,
-            ),
-            ElevatedButton(
-              child: Text("CBSE Study Tips"),
-              onPressed: _launchURLcbseTips,
-            ),
-            ElevatedButton(
-              child: Text("Cambridge International Study Tips"),
-              onPressed: _launchURLcieTips,
-            ),
-            ElevatedButton(
-              child: Text("IIT-JEE Study Tips"),
-              onPressed: _launchURLiitTips,
-            ),
-            ElevatedButton(
-              child: Text("SAT Study Tips"),
-              onPressed: _launchURLsatTips,
-            ),
-            ElevatedButton(
-              child: Text("IBDP Study Tips"),
-              onPressed: _launchURLIBTips,
             )
-          ],
+            ),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+            
+          
+            
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
+              child: Text("CBSE Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
+              
+              onPressed: _launchURLcbseTips,
+            )),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+
+
+
+            
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
+              child: Text("Cambridge International Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
+              onPressed: _launchURLcieTips,
+            )),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+
+
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
+              child: Text("IIT-JEE Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
+              onPressed: _launchURLiitTips,
+            )),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+
+            
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
+              child: Text("SAT Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
+              onPressed: _launchURLsatTips,
+            )),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+            
+            
+            SizedBox(
+              width:220,
+              height: 50,
+              child:ElevatedButton(
+              child: Text("IBDP Study Tips"),
+              style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0))),
+              onPressed: _launchURLIBTips,
+            )),
+            Padding(
+                    padding: EdgeInsets.only(top: 30.0)),
+          ],),
         ),
-      ),
-    );
-  }
+          ],
+    ))
+    ;
+}
+
 }

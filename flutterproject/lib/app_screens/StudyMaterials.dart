@@ -63,155 +63,176 @@ class StudyMaterials extends StatelessWidget {
             
             Padding(
                     padding: EdgeInsets.only(bottom: 60.0)),
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                     child: Text(
                   "ICSE",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
       primary: Colors.blue,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                     onPressed: () {
                       navigateToICSE(context);
                     }),
+          ),
 
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-
-                ElevatedButton(
+            SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                   child: Text(
                   "CBSE",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
       primary: Colors.red,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                   onPressed: () {
                     navigateToCBSE(context);
                   },
-                ),
+                )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                   child: Text(
                   "Cambridge International",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),style: ElevatedButton.styleFrom(
       primary: Colors.orange,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                   onPressed: () {
                     navigateTocie(context);
                   },
-                ),
+                )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
-                
 
-
-
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                   child: Text(
                   "IIT-JEE",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
       primary: Colors.green,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                   onPressed: () {
                     navigateToJEE(context);
                   },
-                ),
+                )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
                 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                   child: Text(
                   "SAT",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
       primary: Colors.pink,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                   onPressed: () {
                     navigateToSAT(context);
                   },
-                ),
+                )),
                 
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
                 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height: 50,
+            child:ElevatedButton(
                   child: Text(
                   "International Baccalaureate (IB)",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontFamily: "Montserrat",
                   ),
                 ),style: ElevatedButton.styleFrom(
       primary: Colors.purple,
       onPrimary: Colors.white,
-      shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(70.0)),
     ),
                   onPressed: () {
                     navigateToib(context);
                   },
-                ),
+                )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
                 
