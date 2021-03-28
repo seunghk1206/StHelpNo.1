@@ -12,7 +12,7 @@ for Ind, each in enumerate(search_ls):
     for url in soup.find_all('a'):
         tempurl = url.get('href')
         try: 
-            if len(set(tempL[Ind])) < 5:
+            if len(set(tempL[Ind])) < 10:
                 if Ind == 0:
                     if nameSearch[Ind] in tempurl:
                         if 'https://munfinder.com/mun/' in tempurl:
