@@ -57,53 +57,165 @@ class JEEmaterials extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "IIT-JEE Study Materials",
+            "IIT-JEE", 
             textAlign: TextAlign.center,
+            
           ),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Text(
-                "IIT-JEE is the most commonly written engineering entrance exam for undergraduate programs",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontFamily: "Times New Roman",
-                ),
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(
+              "IIT-JEE",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: "Montserrat",
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
               ),
-              ElevatedButton(
+            ),
+            Padding(
+                    padding: EdgeInsets.only(top: 20.0)),
+            Text(
+              "IIT-JEE is one of the most written engineering entrace exams for undergraduate programs in India",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontFamily: "Montserrat",
+              ),
+            ),
+
+Padding(
+                    padding: EdgeInsets.only(bottom: 20.0)),
+
+          ElevatedButton(
                 child: Text("The official IIT-JEE Mains website"),
                 onPressed: _launchURLjeeMain,
-              ),
-              ElevatedButton(
+              
+            style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+          ElevatedButton(
                 child: Text("The official IIT-Jee Advanced website"),
                 onPressed: _launchURLjeeAdv,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ElevatedButton(
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+                ElevatedButton(
                 child: Text("IIT-JEE Mains Study Material"),
                 onPressed: _launchURLjeeSMMain,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ElevatedButton(
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+
+            ElevatedButton(
                 child: Text("IIT-JEE Advanced Study Material"),
                 onPressed: _launchURLjeeSMadv,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ElevatedButton(
-                child: Text("IIT-JEE Mains Past Papers with Solutions"),
-                onPressed: _launchURLjeePastMain,
-              ),
-              ElevatedButton(
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+          ElevatedButton(
                 child: Text("IIT-JEE Advanced Past Papers"),
                 onPressed: _launchURLjeePastAdv,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ],
-          ),
-        ));
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+            ElevatedButton( 
+                child: Text("IIT-JEE Mains Past Papers with Solutions"),
+                onPressed: _launchURLjeePastMain,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.green,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+                
+        ]),
+    );
+
   }
 }
+

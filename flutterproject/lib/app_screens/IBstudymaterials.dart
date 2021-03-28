@@ -40,43 +40,116 @@ class IBMaterialsContainer extends StatelessWidget {
     }
   }
 
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+        backgroundColor: Colors.purple,
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "IBDP Study Materials",
+            "International Baccalaureate", 
             textAlign: TextAlign.center,
           ),
         ),
-        body: Center(
-            child: Column(
-          children: [
-            Text(
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(          
               "The International Baccalaureate Diploma Program (IBDP)",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
-                fontFamily: "Times New Roman",
+                fontSize: 25,
+                fontFamily: "Montserrat",
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
               ),
             ),
-            ElevatedButton(
-              child: Text("IB Major Study Materials"),
+            
+            Padding(
+                    padding: EdgeInsets.only(bottom: 60.0)),
+
+
+
+          ElevatedButton(
+              child: Text("IB Guides website"),
               onPressed: _launchURLIBguides,
-            ),
-            ElevatedButton(
+            style: ElevatedButton.styleFrom(
+      primary: Colors.purple,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
               child: Text("The official IBO website"),
               onPressed: _launchURLIBofficial,
+              style: ElevatedButton.styleFrom(
+      primary: Colors.purple,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
             ),
-            ElevatedButton(
-              child: Text("Updated 2021 IBDP past papers - IB Resources "),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
+              child: Text("Updated 2021 IBDP Past Papers - IB Resources "),
               onPressed: _launchURLIBpast,
+              style: ElevatedButton.styleFrom(
+      primary: Colors.purple,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
             ),
-            ElevatedButton(
-              child: Text("Older IBDP past papers"),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+              ElevatedButton(
+              child: Text("Older IBDP Past Papers"),
               onPressed: _launchURLIBpast2,
-            )
-          ],
-        )));
+            style: ElevatedButton.styleFrom(
+      primary: Colors.purple,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+                
+        ]),
+    );
+
   }
+
 }
+
+
+
+
+
+
+
