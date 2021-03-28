@@ -18,3 +18,4 @@ for Ind, each in enumerate(search_ls):
             pass
 print(set(tempL))
 
+#this is normal
