@@ -75,7 +75,12 @@ class SATmaterials extends StatelessWidget {
           ),
         ),
         Padding(padding: EdgeInsets.only(bottom: 60.0)),
-        ElevatedButton(
+
+
+        SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
             child: Text("The official SAT website"),
             onPressed: _launchURLsatOff,
             style: ElevatedButton.styleFrom(
@@ -83,9 +88,15 @@ class SATmaterials extends StatelessWidget {
               onPrimary: Colors.white,
               shape: new RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(30.0)),
-            )),
+            ))),
         Padding(padding: EdgeInsets.only(top: 50.0)),
-        ElevatedButton(
+
+
+
+        SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
           child: Text("Official SAT Practice Tests"),
           onPressed: _launchURLsatPT,
           style: ElevatedButton.styleFrom(
@@ -94,9 +105,15 @@ class SATmaterials extends StatelessWidget {
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(30.0)),
           ),
-        ),
+        )),
         Padding(padding: EdgeInsets.only(top: 50.0)),
-        ElevatedButton(
+
+
+
+        SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
           child: Text("Khan Academy Practice Resources"),
           onPressed: _launchURLsatKA,
           style: ElevatedButton.styleFrom(
@@ -105,8 +122,10 @@ class SATmaterials extends StatelessWidget {
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(30.0)),
           ),
-        ),
+        )),
         Padding(padding: EdgeInsets.only(top: 50.0)),
+
+
       ]),
     );
   }

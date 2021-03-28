@@ -83,7 +83,10 @@ class ICSEmaterials extends StatelessWidget {
 
 
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                   child: Text(
                       "CISCE (the parent body of ICSE) offical website"),
                   onPressed: _launchURLcisce,
@@ -93,14 +96,17 @@ class ICSEmaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ),
+              ),),
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("BYJU'S Free ICSE study materials"),
                 onPressed: _launchURLbyjusICSE,
                 style: ElevatedButton.styleFrom(
@@ -109,14 +115,17 @@ class ICSEmaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ),
+              ),),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("APlusTopper Website - Solved Past Papers"),
                 onPressed: _launchURLicsePast1,
                 style: ElevatedButton.styleFrom(
@@ -125,14 +134,17 @@ class ICSEmaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ),
+              )),
                 
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("BYJU'S Free Solved Past Papers"),
                 onPressed: _launchURLicsePast2,
                 style: ElevatedButton.styleFrom(
@@ -141,7 +153,7 @@ class ICSEmaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-              ),
+              )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
                 

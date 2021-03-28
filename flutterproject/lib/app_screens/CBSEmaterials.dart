@@ -75,7 +75,10 @@ class cbseMaterials extends StatelessWidget {
 
 
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("The CBSE official website"),
               onPressed: _launchURLcbseWebsite,
             style: ElevatedButton.styleFrom(
@@ -83,13 +86,16 @@ class cbseMaterials extends StatelessWidget {
       onPrimary: Colors.white,
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
-      )),
+      ))),
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("BYJU'S Free CBSE Resources"),
               onPressed: _launchURLcbseByjus,
               style: ElevatedButton.styleFrom(
@@ -98,13 +104,16 @@ class cbseMaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("Free PDF Study Material Downloads - NCERT Guru"),
               onPressed: _launchURLcbseNCERTguru,
               style: ElevatedButton.styleFrom(
@@ -113,7 +122,7 @@ class cbseMaterials extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 

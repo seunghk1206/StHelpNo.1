@@ -84,7 +84,10 @@ class IBMaterialsContainer extends StatelessWidget {
 
 
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("IB Guides website"),
               onPressed: _launchURLIBguides,
             style: ElevatedButton.styleFrom(
@@ -92,13 +95,16 @@ class IBMaterialsContainer extends StatelessWidget {
       onPrimary: Colors.white,
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
-      )),
+      ))),
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("The official IBO website"),
               onPressed: _launchURLIBofficial,
               style: ElevatedButton.styleFrom(
@@ -107,13 +113,16 @@ class IBMaterialsContainer extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("Updated 2021 IBDP Past Papers - IB Resources "),
               onPressed: _launchURLIBpast,
               style: ElevatedButton.styleFrom(
@@ -122,12 +131,15 @@ class IBMaterialsContainer extends StatelessWidget {
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
-              ElevatedButton(
+              SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
               child: Text("Older IBDP Past Papers"),
               onPressed: _launchURLIBpast2,
             style: ElevatedButton.styleFrom(
@@ -135,7 +147,7 @@ class IBMaterialsContainer extends StatelessWidget {
       onPrimary: Colors.white,
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
-      )),
+      ))),
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
