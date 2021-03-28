@@ -13,8 +13,6 @@ class UpcomingInternships extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-<<<<<<< Updated upstream
-=======
 
   _launchURLmpower() async {
     const url = 'https://forms.gle/QQPFWFzaHjeoFHFZA';
@@ -25,7 +23,6 @@ class UpcomingInternships extends StatelessWidget {
     }
   }
 
->>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
