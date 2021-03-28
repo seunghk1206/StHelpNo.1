@@ -12,9 +12,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
-  String _versionName = 'V1.0';
-  final splashDelay = 3;
+  
+  final splashDelay = 5;
+  String _textforsplash = 'The Ultimate Student Helper';
 
   @override
   void initState() {
@@ -50,15 +50,24 @@ class _SplashScreenState extends State<SplashScreen> {
                     children: <Widget>[
                       Image.asset(
                         'images/img_splash.png',
-                        height: 400,
-                        width: 400,
+                        height: 300,
+                        width: 300,
                       ),
+                      Padding( padding: EdgeInsets.only(bottom: 15.0),),
+
                       Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                      ),
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 100),
+                child:Text('The Ultimate Student Helper  (TUSH)',
+                textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0)),),
                     ],
                   )),
                 ),
+                
               ],
             ),
           ],
@@ -67,5 +76,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
-

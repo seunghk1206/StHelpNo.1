@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: <Widget>[
                         IconButton(
                           icon: Icon(Icons.info),
-                          color: Colors.white,
+                          color: Color(0xFF21BFBD),
                           onPressed: () {},
                         )
                       ],
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           
           Padding(
-            padding: EdgeInsets.only(left: 11.0),
+            padding: EdgeInsets.fromLTRB(15, 0, 10, 0),
             child: Row(
               children: <Widget>[
                 Text('The Ultimate',
