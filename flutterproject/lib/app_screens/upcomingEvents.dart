@@ -45,31 +45,7 @@ class UpcomingEvents extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0)),
-              Text(
-                splitL[2],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0)),
-              Text(
-                splitL[3],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0)),
-              Text(
-                splitL[4],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+
               ElevatedButton(
                 child: Text(
                   "Click to view more upcoming MUN conferences in India",
