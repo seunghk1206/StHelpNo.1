@@ -65,7 +65,7 @@ class StudyMaterials extends StatelessWidget {
                     padding: EdgeInsets.only(bottom: 60.0)),
           SizedBox(
             width:50,
-            height: 50,
+            height:50,
             child:ElevatedButton(
                     child: Text(
                   "ICSE",
