@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class UpcomingInternships extends StatelessWidget {
-<<<<<<< HEAD
-  final Future<String> textList = File("Data.txt").readAsString();
-=======
+  final textList = File("Data.txt").readAsString();
   _launchURLintern() async {
     const url = 'https://internshala.com/internships';
     if (await canLaunch(url)) {
@@ -15,8 +13,6 @@ class UpcomingInternships extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-
->>>>>>> f75bbe0778d86e7953298dee18ee31213a482c98
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
