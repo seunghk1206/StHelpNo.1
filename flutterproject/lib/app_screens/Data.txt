@@ -1,2 +1,2 @@
-colloquium-mun, delhi-school-of-economics-mun, ics-x-es-mun, diplomatic-mun-2-0, brainiac-mun-2-0, 
-Blockchain, React, R Programming, Campus Ambassador Program, Angular, 
+colloquium-mun, delhi-school-of-economics-mun, 8th-world-congress-on-healthcare-management-system, stay-home-model-united-nations-8-0, brainiac-mun-2-0, 
+R Programming, Blockchain, React, Angular, Campus Ambassador Program, 
