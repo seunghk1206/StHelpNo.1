@@ -111,7 +111,10 @@ class JEEmaterials extends StatelessWidget {
 Padding(
                     padding: EdgeInsets.only(bottom: 20.0)),
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("The official IIT-JEE Mains website"),
                 onPressed: _launchURLjeeMain,
               
@@ -120,14 +123,17 @@ Padding(
       onPrimary: Colors.white,
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
-      )),
+      ))),
                      Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("The official IIT-Jee Advanced website"),
                 onPressed: _launchURLjeeAdv,
           
@@ -137,14 +143,17 @@ Padding(
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
 
-                ElevatedButton(
+                SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("IIT-JEE Mains Study Material"),
                 onPressed: _launchURLjeeSMMain,
           
@@ -154,7 +163,7 @@ Padding(
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
@@ -162,7 +171,10 @@ Padding(
 
 
 
-            ElevatedButton(
+            SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("IIT-JEE Advanced Study Material"),
                 onPressed: _launchURLjeeSMadv,
           
@@ -172,14 +184,17 @@ Padding(
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
 
-          ElevatedButton(
+          SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton(
                 child: Text("IIT-JEE Advanced Past Papers"),
                 onPressed: _launchURLjeePastAdv,
           
@@ -189,13 +204,16 @@ Padding(
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
 
 
-            ElevatedButton( 
+            SizedBox(
+            width:50,
+            height:50,
+            child:ElevatedButton( 
                 child: Text("IIT-JEE Mains Past Papers with Solutions"),
                 onPressed: _launchURLjeePastMain,
           
@@ -205,7 +223,7 @@ Padding(
       shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0)),
               ),
-            ),
+            )),
                  Padding(
                     padding: EdgeInsets.only(top: 50.0)),
 
