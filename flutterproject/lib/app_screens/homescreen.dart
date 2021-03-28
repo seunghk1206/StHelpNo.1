@@ -56,13 +56,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 28.0)),
+                        fontSize: 27.0)),
                 SizedBox(width: 10.0),
                 Text('Student Helper',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
-                        fontSize: 28.0))
+                        fontSize: 27.0))
               ],
             ),
           ),

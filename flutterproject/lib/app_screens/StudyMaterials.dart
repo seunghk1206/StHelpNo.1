@@ -69,7 +69,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
@@ -95,7 +95,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
@@ -120,7 +120,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
@@ -147,7 +147,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
@@ -173,7 +173,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
@@ -199,7 +199,7 @@ class StudyMaterials extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: "Montserrat",
                   ),
