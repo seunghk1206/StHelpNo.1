@@ -16,7 +16,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     StudyMaterials(),
     UpcomingEvents(), //CHANGE THIS TO UPCOMING EVENTS
     UpcomingInternships(), // CHANGE THIS to INTERNSHIP OPPORTUNITIES
-    Scaffold() // CHANGE THIS to TIPS FOr STUDENTS
+    Tipsforstudents() // CHANGE THIS to TIPS FOr STUDENTS
   ];
   int _currentIndex = 0;
 
