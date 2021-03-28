@@ -3,10 +3,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class UpcomingInternships extends StatelessWidget {
+class InternState extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return InternshipWidget();
+  }
+}
+
+class InternshipWidget extends State<InternState> {
+  var _internshipIndex = 1;
+
+  void _toggleIntern() {
+    setState(() {
+      _internshipIndex = _internshipIndex + 5;
+    });
+  }
+
   final textList = File("Data.txt").readAsString();
   _launchURLintern() async {
-    const url = 'https://internshala.com/internships';
+    const url = 'https://internshala.com/internships/work-from-home-jobs';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -57,7 +72,7 @@ class UpcomingInternships extends StatelessWidget {
               ),
             ),
             Text(
-              "MPower For Youth is a youth empowerment initiative, founded by Mihir Mutyampeta. It aims to empower the underprivileged youth of India mentally and financially.  The organization is currently recruiting for their social media team.  Click the link below to access the application form",
+              "Social Media Team at MPower For Youth",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
@@ -69,7 +84,7 @@ class UpcomingInternships extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.only(bottom: 30.0)),
             Text(
-              internships[1],
+              internships[_internshipIndex],
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
@@ -77,7 +92,7 @@ class UpcomingInternships extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.only(bottom: 5.0)),
             Text(
-              internships[2],
+              internships[_internshipIndex + 1],
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
@@ -85,7 +100,7 @@ class UpcomingInternships extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.only(bottom: 5.0)),
             Text(
-              internships[3],
+              internships[_internshipIndex + 2],
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
@@ -93,7 +108,7 @@ class UpcomingInternships extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.only(bottom: 5.0)),
             Text(
-              internships[4],
+              internships[_internshipIndex + 3],
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
@@ -101,58 +116,22 @@ class UpcomingInternships extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.only(bottom: 5.0)),
             Text(
-              internships[5],
+              internships[_internshipIndex + 4],
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
               ),
             ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
-            Text(
-              internships[6],
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
-            Text(
-              internships[7],
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
-            Text(
-              internships[8],
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
-            Text(
-              internships[9],
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
-            Text(
-              internships[10],
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 5.0)),
             ElevatedButton(
               child: Text("Click here to find more internship opportunities"),
               onPressed: _launchURLintern,
             ),
             Padding(padding: EdgeInsets.only(bottom: 30.0)),
+            ElevatedButton(
+              child: Text("Load new internships"),
+              onPressed: _toggleIntern,
+            ),
+            Padding(padding: EdgeInsets.only(bottom: 10.0)),
           ],
         ),
       ),

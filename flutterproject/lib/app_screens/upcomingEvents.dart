@@ -3,8 +3,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-// Fix below here
-class UpcomingEvents extends StatelessWidget {
+class EventState extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return UpcomingEvents();
+  }
+}
+
+class UpcomingEvents extends State<EventState> {
+  var _eventIndex = 1;
+
+  void _toggleEvent() {
+    setState(() {
+      _eventIndex = _eventIndex + 5;
+    });
+  }
+
   final textList = File("Data.txt").readAsString();
   _launchURLmun() async {
     const url = 'https://munfinder.com';
@@ -43,7 +57,7 @@ class UpcomingEvents extends StatelessWidget {
             children: [
               Padding(padding: EdgeInsets.only(top: 10.0)),
               Text(
-                events[1],
+                events[_eventIndex],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
@@ -51,7 +65,7 @@ class UpcomingEvents extends StatelessWidget {
               ),
               Padding(padding: EdgeInsets.only(bottom: 5.0)),
               Text(
-                events[2],
+                events[_eventIndex + 1],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
@@ -59,7 +73,7 @@ class UpcomingEvents extends StatelessWidget {
               ),
               Padding(padding: EdgeInsets.only(bottom: 5.0)),
               Text(
-                events[3],
+                events[_eventIndex + 2],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
@@ -67,7 +81,7 @@ class UpcomingEvents extends StatelessWidget {
               ),
               Padding(padding: EdgeInsets.only(bottom: 5.0)),
               Text(
-                events[4],
+                events[_eventIndex + 3],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
@@ -75,53 +89,13 @@ class UpcomingEvents extends StatelessWidget {
               ),
               Padding(padding: EdgeInsets.only(bottom: 5.0)),
               Text(
-                events[5],
+                events[_eventIndex + 4],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
-              Text(
-                events[6],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
-              Text(
-                events[7],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
-              Text(
-                events[8],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
-              Text(
-                events[9],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
-              Text(
-                events[10],
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-              Padding(padding: EdgeInsets.only(bottom: 5.0)),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
               ElevatedButton(
                 child: Text(
                   "Click to view more upcoming MUN conferences in India",
@@ -130,7 +104,10 @@ class UpcomingEvents extends StatelessWidget {
                 onPressed: _launchURLmun,
               ),
               Padding(padding: EdgeInsets.only(bottom: 30.0)),
-              //Text(),
+              ElevatedButton(
+                child: Text("Load more Upcoming MUN conferences"),
+                onPressed: _toggleEvent,
+              ),
             ],
           ),
         ));
