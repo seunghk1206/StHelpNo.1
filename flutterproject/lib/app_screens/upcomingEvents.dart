@@ -27,5 +27,3 @@ class UpcomingEvents extends StatelessWidget {
         ));
   }
 }
-
-// class ClassName extends addadsf extends statelesswidget

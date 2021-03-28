@@ -13,6 +13,16 @@ class Tipsforstudents extends StatelessWidget {
     }
   }
 
+  _launchURLIBTips() async {
+    const url =
+        '//https://www.crimsoneducation.org/au/blog/test-prep/top-10-ib-study-tips/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +46,10 @@ class Tipsforstudents extends StatelessWidget {
               child: Text("Cambridge International Study Tips"),
               onPressed: _launchURLcieTips,
             ),
+            ElevatedButton(
+              child: Text("IBDP Study Tips"),
+              onPressed: _launchURLIBTips,
+            )
           ],
         ),
       ),
