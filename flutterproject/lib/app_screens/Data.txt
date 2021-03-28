@@ -1,2 +1,2 @@
-colloquium-mun, delhi-school-of-economics-mun, 8th-world-congress-on-healthcare-management-system, stay-home-model-united-nations-8-0, brainiac-mun-2-0, 
-R Programming, Blockchain, React, Angular, Campus Ambassador Program, 
+brainiac-mun-2-0, western-canada-high-school-model-united-nation-2021, delhi-school-of-economics-mun, longfellow-middle-school-model-united-nations-conference, 2nd-advanced-chemistry-world-congress, elbmun-online-conference-2021, 8th-world-congress-on-healthcare-management-system, colloquium-mun, stay-home-model-united-nations-8-0, ophthalmology-conferences, 
+Angular, SAS Programming, Data Structures & Algorithms, Campus Ambassador Program, React, R Programming, Advanced Excel, Git & GitHub, Blockchain, How to Ace Coding Interviews, 
