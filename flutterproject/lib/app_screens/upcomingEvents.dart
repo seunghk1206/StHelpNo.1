@@ -25,8 +25,9 @@ abstract class Intermediate extends StatelessWidget {
   }
 }
 
+// Fix below here
 class UpcomingEvents extends Intermediate {
-  var textList Analysis("Data.txt");
+  final textList = Analysis("Data.txt");
   @override
   Widget build(BuildContext context) {
     return Scaffold(
