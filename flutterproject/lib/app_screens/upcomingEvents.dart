@@ -32,12 +32,18 @@ class UpcomingEvents extends Intermediate {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Upcoming MUN in India"),
+          title: Text(
+            "Upcoming MUN in India",
+            textAlign: TextAlign.center,
+          ),
         ),
         body: Center(
           child: Column(
             children: [
-              Text("Below are displayed upcoming Model United Nations ")
+              Text(
+                "Below are displayed upcoming Model United Nations conferences in India",
+                textAlign: TextAlign.center,
+              )
             ],
           ),
         ));
