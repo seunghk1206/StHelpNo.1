@@ -14,9 +14,9 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   final List _screens = [
     HomeScreen(),
     StudyMaterials(),
-    UpcomingEvents(), //CHANGE THIS TO UPCOMING EVENTS
-    InternshipWidget(), // CHANGE THIS to INTERNSHIP OPPORTUNITIES
-    Tipsforstudents(), // CHANGE THIS to TIPS FOr STUDENTS
+    UpcomingEvents(),
+    InternshipWidget(),
+    Tipsforstudents(),
   ];
   int _currentIndex = 0;
 
