@@ -55,41 +55,6 @@ class UpcomingInternships extends StatelessWidget {
               onPressed: _launchURLmpower,
             ),
             Padding(padding: EdgeInsets.only(bottom: 30.0)),
-            Text(
-              splitL[5],
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 10.0)),
-            Text(
-              splitL[6],
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 10.0)),
-            Text(
-              splitL[7],
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 10.0)),
-            Text(
-              splitL[8],
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 10.0)),
-            Text(
-              splitL[9],
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(bottom: 30.0)),
             ElevatedButton(
               child: Text("Click here to find more internship opportunities"),
               onPressed: _launchURLintern,
