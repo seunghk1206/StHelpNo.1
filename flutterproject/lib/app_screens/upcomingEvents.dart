@@ -14,6 +14,7 @@ class UpcomingEvents extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
+
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
@@ -28,20 +29,55 @@ class UpcomingEvents extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
+              Padding(padding: EdgeInsets.only(top: 10.0)),
               Text(
-                splitL[0],// 0-4 is MUN 5-9 is internship
+                splitL[0],
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 18,
                 ),
               ),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+              Text(
+                splitL[1],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+              Text(
+                splitL[2],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+              Text(
+                splitL[3],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
+              Text(
+                splitL[4],
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 10.0)),
               ElevatedButton(
                 child: Text(
                   "Click to view more upcoming MUN conferences in India",
                   textAlign: TextAlign.center,
                 ),
                 onPressed: _launchURLmun,
-              )
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 30.0)),
               //Text(),
             ],
           ),
