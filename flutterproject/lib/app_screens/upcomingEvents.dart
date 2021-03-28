@@ -1,14 +1,6 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
-import 'dart:async';
-import 'dart:core';
-
-// Fix below here
-class UpcomingEvents extends StatelessWidget {
-  final Future<String> textList = File("Data.txt").readAsString();
-=======
 import 'package:url_launcher/url_launcher.dart';
 
 // Fix below here
@@ -23,7 +15,6 @@ class UpcomingEvents extends StatelessWidget {
   }
 
   final textList = File("Data.txt").readAsString();
->>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     String initS = textList.toString();
@@ -39,11 +30,7 @@ class UpcomingEvents extends StatelessWidget {
           child: Column(
             children: [
               Text(
-<<<<<<< Updated upstream
-                splitL[0],
-=======
                 "Upcoming Model United Nations conferences in India",
->>>>>>> Stashed changes
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25,

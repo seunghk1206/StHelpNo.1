@@ -37,7 +37,7 @@ class UpcomingInternships extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            ElevatedButton(onPressed: null, child: null))
+            ElevatedButton(onPressed: null, child: null),
             ElevatedButton(
               child: Text("Click here to find more internship opportunities"),
               onPressed: _launchURLintern,
