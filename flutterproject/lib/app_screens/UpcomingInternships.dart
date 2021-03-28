@@ -77,7 +77,7 @@ class InternshipWidget extends StatelessWidget {
               style: const TextStyle(
                   fontSize: 18,
                   color: Colors.white,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   fontFamily: "Montserrat",
               ),
             ),
@@ -92,7 +92,7 @@ class InternshipWidget extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 15,
                   color: Colors.white,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w500,
                   fontFamily: "Montserrat",
                 ),
               ),
@@ -116,7 +116,7 @@ class InternshipWidget extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 18,
                   color: Colors.white,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   fontFamily: "Montserrat",
               ),
               ),
@@ -239,12 +239,12 @@ class InternshipWidget extends StatelessWidget {
           height: 50,
           child: ElevatedButton(
               child: Text(
-                "Find more engrossing opportunities here",
+                "Find more interesting opportunities here",
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 15,
                   color: Colors.white,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w700,
                   fontFamily: "Montserrat",
                 ),
               ),
