@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 15.0, left: 20.0),
+            padding: EdgeInsets.only(top: 15.0, left: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           
           Padding(
-            padding: EdgeInsets.only(left: 30.0),
+            padding: EdgeInsets.only(left: 11.0),
             child: Row(
               children: <Widget>[
                 Text('The Ultimate',
@@ -56,51 +56,113 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 25.0)),
+                        fontSize: 28.0)),
                 SizedBox(width: 10.0),
                 Text('Student Helper',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
-                        fontSize: 25.0))
+                        fontSize: 28.0))
               ],
             ),
           ),
           SizedBox(height: 40.0),
           Container(
-            height: MediaQuery.of(context).size.height - 185.0,
+            padding: EdgeInsets.only(top: 30, bottom: 60),
+            height: MediaQuery.of(context).size.height * 0.73,
+            
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(75.0)),
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0)),
             ),
-            child: ListView(
-              primary: false,
-              padding: EdgeInsets.only(left: 25.0, right: 20.0),
+            
+            child: Column(
+        children: <Widget>[
+          Text('Offering Resources for:',
+                    style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0)),
+          Padding(
+                    padding: EdgeInsets.only(top: 45.0)),
+
+          Flexible(
+            child: Row(
               children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(top: 45.0),
-                ),
-                Container(
-                  height: 200,
-                      width: 150.0,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            color: Colors.grey,
-                            style: BorderStyle.solid,
-                            width: 1.0),
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: ElevatedButton(
-                        child: Text("BLABLALBAL"), //MIHIR PUT THE PARA HERE
-                        onPressed: () {
-                        },
-                      ),
-                    ),
+                _buildStatCard('', 'ICSE', Colors.lightBlue),
+                _buildStatCard('', 'CBSE', Colors.red),
               ],
             ),
+          ),
+          Flexible(
+            child: Row(
+              children: <Widget>[
+              _buildStatCard('', 'Cambridge International', Colors.orange),
+
+              ],
+            ),
+          ),
+          Flexible(
+            child: Row(
+              children: <Widget>[
+                _buildStatCard('', 'IIT-JEE', Colors.green),
+                _buildStatCard('', 'SAT', Colors.pink),
+              ],
+            ),
+          ),
+          
+          Flexible(
+            child: Row(
+              children: <Widget>[
+                _buildStatCard('', 'International Baccalaureate (IB)', Colors.purple),
+              ],
+            ),
+          ),
+               
+        ],
+      ),
           )
         ],
       ),
     );
   }
 }
+
+  
+
+  Expanded _buildStatCard(String title, String count, MaterialColor color) {
+    return Expanded(
+      child: Container(
+        margin: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 15.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            Text(
+              count,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+

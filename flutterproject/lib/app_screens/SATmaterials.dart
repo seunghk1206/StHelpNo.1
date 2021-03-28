@@ -31,39 +31,109 @@ class SATmaterials extends StatelessWidget {
     }
   }
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+        backgroundColor: Colors.pink,
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "SAT Exam Study Materials",
+            "SAT", 
             textAlign: TextAlign.center,
+            
           ),
         ),
-        body: Center(
-            child: Column(
-          children: [
-            Text(
-              "The SAT examination is a common entrance test, administed by the College Board.  It is mainly used in the college admissions to the United States",
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(
+              "SAT",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30,
-                fontFamily: "Times New Roman",
+                fontFamily: "Montserrat",
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
               ),
             ),
-            ElevatedButton(
+            Padding(
+                    padding: EdgeInsets.only(top: 20.0)),
+            Text(
+              "The SAT is a standardized examination, administed by the College Board. It is mainly used in college admissions to the U.S",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: "Montserrat",
+                color: Colors.white,
+              ),
+            ),
+            
+            Padding(
+                    padding: EdgeInsets.only(bottom: 60.0)),
+
+
+
+          ElevatedButton(
               child: Text("The official SAT website"),
               onPressed: _launchURLsatOff,
-            ),
-            ElevatedButton(
+            style: ElevatedButton.styleFrom(
+      primary: Colors.pink,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+          ElevatedButton(
               child: Text("Official SAT Practice Tests"),
               onPressed: _launchURLsatPT,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.pink,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
             ),
-            ElevatedButton(
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
               child: Text("Khan Academy Practice Resources"),
               onPressed: _launchURLsatKA,
-            )
-          ],
-        )));
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.pink,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+                
+        ]),
+    );
+
   }
 }

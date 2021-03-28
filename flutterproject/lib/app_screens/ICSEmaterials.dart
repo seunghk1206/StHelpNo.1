@@ -39,45 +39,115 @@ class ICSEmaterials extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-
-  @override
+  
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "ICSE Study Materials",
+            "ICSE", 
             textAlign: TextAlign.center,
           ),
         ),
-        body: Center(
-            child: Column(
-          children: [
-            Text(
-              "ICSE, standing for Indian Certificate of Secondary Education, is a popular board of education in India",
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(          
+              "ICSE – Indian Certificate of Secondary Education",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
-                fontFamily: "Times New Roman",
+                fontSize: 25,
+                fontFamily: "Montserrat",
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
               ),
             ),
-            ElevatedButton(
-              child: Text(
-                  "The official website of CISCE, the parent body of ICSE"),
-              onPressed: _launchURLcisce,
-            ),
-            ElevatedButton(
-              child: Text("Byju's Free ICSE study materials"),
-              onPressed: _launchURLbyjusICSE,
-            ),
-            ElevatedButton(
-              child: Text("Applu's Topper Website - Solved Past Papers"),
-              onPressed: _launchURLicsePast1,
-            ),
-            ElevatedButton(
-              child: Text("Byju's Free Solved Past Papers"),
-              onPressed: _launchURLicsePast2,
-            )
-          ],
-        )));
+            
+            Padding(
+                    padding: EdgeInsets.only(bottom: 60.0)),
+
+
+
+          ElevatedButton(
+                  child: Text(
+                      "CISCE (the parent body of ICSE) offical website"),
+                  onPressed: _launchURLcisce,
+                  style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+              ),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+                ElevatedButton(
+                child: Text("BYJU'S Free ICSE study materials"),
+                onPressed: _launchURLbyjusICSE,
+                style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+              ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+
+                ElevatedButton(
+                child: Text("APlusTopper Website - Solved Past Papers"),
+                onPressed: _launchURLicsePast1,
+                style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+              ),
+                
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
+                child: Text("BYJU'S Free Solved Past Papers"),
+                onPressed: _launchURLicsePast2,
+                style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+              ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+                
+        ]),
+    );
+
   }
+
 }

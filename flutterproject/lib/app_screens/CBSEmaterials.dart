@@ -31,39 +31,100 @@ class cbseMaterials extends StatelessWidget {
     }
   }
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "CBSE Study Material",
+            "CBSE", 
             textAlign: TextAlign.center,
           ),
         ),
-        body: Center(
-            child: Column(
-          children: [
-            Text(
-              "CBSE stands for Central Board of Secondary Education.  CBSE is one of the most popular boards in India",
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(          
+              "CBSE – Central Board of Secondary Education",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
-                fontFamily: "Times New Roman",
+                fontSize: 25,
+                fontFamily: "Montserrat",
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
               ),
             ),
-            ElevatedButton(
+            
+            Padding(
+                    padding: EdgeInsets.only(bottom: 60.0)),
+
+
+
+          ElevatedButton(
               child: Text("The CBSE official website"),
               onPressed: _launchURLcbseWebsite,
-            ),
-            ElevatedButton(
-              child: Text("Byju's Free CBSE Resources"),
+            style: ElevatedButton.styleFrom(
+      primary: Colors.red,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
+              child: Text("BYJU'S Free CBSE Resources"),
               onPressed: _launchURLcbseByjus,
+              style: ElevatedButton.styleFrom(
+      primary: Colors.red,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
             ),
-            ElevatedButton(
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
               child: Text("Free PDF Study Material Downloads - NCERT Guru"),
               onPressed: _launchURLcbseNCERTguru,
-            )
-          ],
-        )));
+              style: ElevatedButton.styleFrom(
+      primary: Colors.red,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+                
+        ]),
+    );
+
   }
+
 }
+
+
+
+

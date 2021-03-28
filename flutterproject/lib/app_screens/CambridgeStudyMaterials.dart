@@ -40,40 +40,102 @@ class CambridgeContainer extends StatelessWidget {
     }
   }
 
-  @override
+ 
+@override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+
+      appBar: AppBar(
+        backgroundColor: Colors.orange,
+              actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.menu_book,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
           title: Text(
-            "Cambridge International Education Study Materials",
+            "Cambridge International", 
             textAlign: TextAlign.center,
+            
           ),
         ),
-        body: Center(
-            child: Column(
-          children: [
-            Text(
+
+      body: ListView(
+        
+        children: <Widget>[
+           Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+          Text(
               "The Cambridge International Curriculum",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30,
-                fontFamily: "Times New Roman",
+                fontFamily: "Montserrat",
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
               ),
             ),
-            ElevatedButton(
+            
+            Padding(
+                    padding: EdgeInsets.only(bottom: 60.0)),
+
+
+
+          ElevatedButton(
               child: Text("The official Cambridge International Website"),
               onPressed: _launchURLCambridgeofficial,
               //style: const Styles.buttonTextStyle,
-            ),
-            ElevatedButton(
-              child: Text("A level chemistry revision material"),
+            style: ElevatedButton.styleFrom(
+      primary: Colors.orange,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+      )),
+                     Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+          ElevatedButton(
+              child: Text("A level Chemistry Revision Material"),
               onPressed: _launchURLcieChem,
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.orange,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
             ),
-            ElevatedButton(
-              child: Text("A level physics study materials"),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+
+
+                ElevatedButton(
+              child: Text("A level Physics Study Material"),
               onPressed: _launchURLciePMT,
-            )
-          ],
-        )));
+          
+              style: ElevatedButton.styleFrom(
+      primary: Colors.orange,
+      onPrimary: Colors.white,
+      shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0)),
+              ),
+            ),
+                 Padding(
+                    padding: EdgeInsets.only(top: 50.0)),
+
+                
+        ]),
+    );
+
   }
 }
+
+
